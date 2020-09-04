@@ -46,7 +46,7 @@ describe("person", () => {
     const testperson = new earthuser();
     testperson.earthAge = 2;
     testperson.planetaryages = testperson.planetaryConvert();
-    expect(testperson.planetaryages).toEqual([0.48, 1.24, 3.76, 23.72]);
+    expect(testperson.planetaryages).toEqual([8.33, 3.23, 1.06, 0.17]);
   });
 
   test("Test if life expectancy is set based upon gender for males.", () => {
