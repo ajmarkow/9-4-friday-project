@@ -73,16 +73,16 @@ describe("person", () => {
     expect(testperson.getLifeExpectancy()).toEqual(71);
   });
 
-  // test("Tests if life ((expectancy - earthage) * planetaryConvert) is pushed to planetary life expectancy array", () => {
-  //   const testperson = new earthuser();
-  //   testperson.earthAge = 71;
-  //   expect(testperson.populatePlanetaryLifeExpectancy()).toEqual([
-  //     295.83,
-  //     114.52,
-  //     37.77,
-  //     5.986,
-  //   ]);
-  // });
+  test("Tests if populatePlanetaryLifeExpectancy  generates planetary life expectancy values.", () => {
+    const testperson = new earthuser();
+    testperson.lifeExpectancy = 71;
+    expect(testperson.populatePlanetaryLifeExpectancy()).toEqual([
+      "295.83",
+      "114.52",
+      "37.77",
+      "5.99",
+    ]);
+  });
 
   test("Test if printResults properly uses template literal and returns values", () => {
     const testperson = new earthuser();
@@ -92,7 +92,12 @@ describe("person", () => {
     testperson.planetaryAges = testperson.planetaryConvert();
     let expectedoutput = testperson.printResults();
     expect(expectedoutput).toEqual(
-      `Your age on earth is 2.  Your age on Mercury, Venus,Mars and Jupiter respectively are 8.33,3.23,1.06,0.17.  Your life expectancy is 72.  Your gender is female.`
+      `Your age on earth is 2.  Your age on Mercury, Venus,Mars and Jupiter respectively are 8.33,3.23,1.06,0.17.  Your life expectancy on earth is 72.  Your gender is female.`
     );
   });
+
+  test("Get remaining life expectancy.", () => {
+    const testperson = new earthuser();
+    testperson.sex = "female"
+    expect(testperson.getRemain()).toEqual([]);
 });
