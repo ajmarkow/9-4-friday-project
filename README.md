@@ -53,3 +53,47 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 Copyright (c) 2020 AJ Markow
+
+## Specifications
+
+Describe: Returns mercuryage. Mercuryage equal to (1 earth year) \* 0.24)
+Test:
+Code:
+Expect:
+
+---
+
+Describe: Returns venusage. venusage equal to (1 earth year) \* 0.62)
+Test:
+Code:
+Expect:
+
+---
+
+Describe: Returns marsage. marsage equal to ((1 earth year) \* 1.88 ))
+Test:
+Code:
+Expect:
+
+---
+
+Describe: Returns jupiterage. jupiterage equal to ((1 earth year) \* 11.86 ))
+Test:
+Code:
+Expect:
+
+---
+
+Describe: Returns life expectancy on selected planet. Subtracts years lived from life expectancy, expressed in age on selected planet, to get years remaining.
+Test:
+Code:
+Expect:
+
+---
+
+Describe: Returns years lived past life expectancy, if users age > life expectancy on planet.
+Test:
+Code:
+Expect:
+
+---
