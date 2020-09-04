@@ -2,7 +2,7 @@
 
 ---
 
-_{Brief description of application}, {Date of current version}_
+_Solar System Age Calculator, September 4, 2020_
 
 By **_AJ Markow_**
 
