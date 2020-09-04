@@ -4,6 +4,7 @@ export default class Calculator {
     this.sex = String;
     this.planets = [];
     this.planetaryages = [];
+    this.planetaryLifeExpectancy = [];
     this.lifeExpectancy = 0;
   }
 
