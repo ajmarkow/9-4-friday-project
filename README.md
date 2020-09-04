@@ -63,7 +63,23 @@ Test: Node project compiles correctly.
 Code: package.json and webback.config files are configured correctly.
 Expect: Node project compiles sucessfully.
 
-## Test Passed 10:21 AM
+** Test Passed 10:21 AM**
+
+---
+
+Describe: Earthuser constructor holds earth age, sex, and a blank array
+
+Test: when earthuser.earthage is set to 1, value will be held and equal 1.
+
+Code: function earthuser {
+properties go here:
+}
+
+Expect: earthuser.earthage.toequal(1);
+
+**TEST PASSED 11:30 AM**
+
+---
 
 Describe: Returns mercuryage. Mercuryage equal to (1 earth year) \* 0.24)
 
