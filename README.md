@@ -30,6 +30,8 @@ Bootstrap, CSS, Git, HTML, JavaScript, Jest, Node.js, Webpack.
 
 ### License
 
+---
+
 MIT License
 
 Copyright (c) 2020 AJ Markow
