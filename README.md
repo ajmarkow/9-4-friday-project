@@ -1,4 +1,4 @@
-# _Galactic Solar System Age Calculator_
+# Galactic Solar System Age Calculator
 
 ---
 
