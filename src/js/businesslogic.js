@@ -26,10 +26,13 @@ export default class Calculator {
     let lifeExpectancy = 0;
     if (this.sex === "male") {
       lifeExpectancy += 70;
+      this.lifeExpectancy = 70;
     } else if (this.sex === "female") {
       lifeExpectancy += 72;
+      this.lifeExpectancy = 72;
     } else if (this.sex === "nonbinary") {
       lifeExpectancy += 71;
+      this.lifeExpectancy = 71;
     }
     return lifeExpectancy;
   }

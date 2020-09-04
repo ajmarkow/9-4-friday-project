@@ -32,7 +32,7 @@ describe("person", () => {
     const testperson = new earthuser();
     testperson.sex = "female";
     testperson.earthAge = 2;
-    testperson.lifeExpectancy = testperson.getLifeExpectancy();
+    testperson.getLifeExpectancy();
     expect(testperson.lifeExpectancy).toEqual(72);
   });
 
