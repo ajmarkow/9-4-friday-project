@@ -4,19 +4,41 @@ import earthuser from "./src/js/businesslogic";
 import mercuryAge from "./src/js/businesslogic";
 
 describe("person", () => {
-  test("user object stores earthage, sex properties, and planetary age array to hold ages. ", () => {
+  test("user object stores earthAge.", () => {
     const testperson = new earthuser();
-    testperson.earthage = 1;
-    testperson.sex = "male";
-    testperson.planetaryages = [];
-    expect(testperson.earthage).toEqual(1);
-    expect(testperson.sex).toEqual("male");
-    expect(testperson.planetaryages).toEqual([]);
+    testperson.earthAge = 1;
+    expect(testperson.earthAge).toEqual(1);
   });
 
-  test("mercuryAge function returns earthage *0.24 ", () => {
+  test("user object stores sex property. ", () => {
     const testperson = new earthuser();
-    testperson.earthage = 1;
-    expect(testperson.mercuryAge).toEqual(0.24);
+    testperson.sex = "male";
+    expect(testperson.sex).toEqual("male");
+  });
+
+  test("user object stores an array of numbers in planetary age array. ", () => {
+    const testperson = new earthuser();
+
+    testperson.planetaryages = [1, 2, 3, 4];
+    expect(testperson.planetaryages).toEqual([1, 2, 3, 4]);
+  });
+
+  test("user object planets array stores list of planets. ", () => {
+    const testperson = new earthuser();
+    testperson.planets = ["Mercury", "Venus", "Mars", "Jupiter"];
+    expect(testperson.planets).toEqual(["Mercury", "Venus", "Mars", "Jupiter"]);
+  });
+
+  test("user object stores lifeExpectancy property. ", () => {
+    const testperson = new earthuser();
+    testperson.lifeExpectancy = 70;
+
+    expect(testperson.lifeExpectancy).toEqual(70);
+  });
+
+  test("planetaryAge function returns earthAge *planetary coefficient for Mercury, Venus, Mars, and Jupiter ", () => {
+    const testperson = new earthuser();
+    testperson.earthAge = 2;
+    expect(testperson.planetaryConvert()).toEqual([0.48, 1.24, 3.76, 23.72]);
   });
 });
