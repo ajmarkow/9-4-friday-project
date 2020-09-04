@@ -57,6 +57,7 @@ Copyright (c) 2020 AJ Markow
 ## Specifications
 
 Describe: Returns mercuryage. Mercuryage equal to (1 earth year) \* 0.24)
+
 Test:
 
 Code:
