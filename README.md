@@ -63,7 +63,7 @@ Test: Node project compiles correctly.
 Code: package.json and webback.config files are configured correctly.
 Expect: Node project compiles sucessfully.
 
-** Test Passed 10:21 AM**
+**Test Passed 10:21 AM**
 
 ---
 
@@ -77,7 +77,7 @@ properties go here:
 
 Expect: earthuser.earthage.toequal(1);
 
-** 5 TESTS PASSED**
+**5 TESTS PASSED**
 
 ---
 
@@ -89,7 +89,7 @@ Code: mercuryAge(user.earthage = 1)
 
 Expect: mercuryAge.toEqual(0.24)
 
----
+## **Test Passed**
 
 Describe: Refactor mercury age so one function returns planetary age pushed to an array for each of the four planets.
 
@@ -121,5 +121,7 @@ Test: sex('male') will equal 70 years for males, and 72 for females
 Code: getLifeExpectancy()
 
 Expect: maleperson.lifeExpectancy.toEqual(70)
+
+**TEST PASSED**
 
 ---

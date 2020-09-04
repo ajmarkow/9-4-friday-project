@@ -21,4 +21,16 @@ export default class Calculator {
 
     return ageArray;
   }
+
+  getLifeExpectancy() {
+    let lifeExpectancy = 0;
+    if (this.sex === "male") {
+      lifeExpectancy += 70;
+    } else if (this.sex === "female") {
+      lifeExpectancy += 72;
+    } else if (this.sex === "nonbinary") {
+      lifeExpectancy += 71;
+    }
+    return lifeExpectancy;
+  }
 }

@@ -41,4 +41,22 @@ describe("person", () => {
     testperson.earthAge = 2;
     expect(testperson.planetaryConvert()).toEqual([0.48, 1.24, 3.76, 23.72]);
   });
+
+  test("Test if life expectancy is set based upon gender for males.", () => {
+    const testperson = new earthuser();
+    testperson.sex = "male";
+    expect(testperson.getLifeExpectancy()).toEqual(70);
+  });
+
+  test("Test if life expectancy is set based upon gender for females.", () => {
+    const testperson = new earthuser();
+    testperson.sex = "female";
+    expect(testperson.getLifeExpectancy()).toEqual(72);
+  });
+
+  test("Test if life expectancy is set based upon gender for nonbinary people.", () => {
+    const testperson = new earthuser();
+    testperson.sex = "nonbinary";
+    expect(testperson.getLifeExpectancy()).toEqual(71);
+  });
 });
