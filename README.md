@@ -58,6 +58,13 @@ Copyright (c) 2020 AJ Markow
 
 ## Specifications
 
+Describe: Uses node.js runtime to manage dependencies, and webpack to manage packaging components.
+Test: Node project compiles correctly.
+Code: package.json and webback.config files are configured correctly.
+Expect: Node project compiles sucessfully.
+
+---
+
 Describe: Returns mercuryage. Mercuryage equal to (1 earth year) \* 0.24)
 
 Test:
