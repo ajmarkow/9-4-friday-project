@@ -88,10 +88,11 @@ describe("person", () => {
     const testperson = new earthuser();
     testperson.earthAge = 2;
     testperson.sex = "female";
-    testperson.lifeExpectancy = this.getLifeExpectancy;
+    testperson.lifeExpectancy = testperson.getLifeExpectancy();
     testperson.planetaryAges = testperson.planetaryConvert();
-    expect(testperson.printResults).toEqual(
-      "Your age on earth is {this.earthAge}.  Your age on Mercury, Venus,Mars and Jupiter respectively are {this.planetaryAges}.  Your life expectancy is {this.lifeExpectancy}.  Your gender is {this.sex}."
+    let expectedoutput = testperson.printResults();
+    expect(expectedoutput).toEqual(
+      `Your age on earth is 2.  Your age on Mercury, Venus,Mars and Jupiter respectively are 8.33,3.23,1.06,0.17.  Your life expectancy is 72.  Your gender is female.`
     );
   });
 });
