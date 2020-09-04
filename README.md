@@ -67,9 +67,9 @@ Expect: Node project compiles sucessfully.
 
 ---
 
-Describe: Earthuser constructor holds earth age, sex, and a blank array
+Describe: Earthuser constructor holds earth age, sex, array with planet names and a blank array
 
-Test: when earthuser.earthage is set to 1, value will be held and equal 1.
+Test: when earthuser.earthage is set to 1, value will be held and equal 1 and so on for 5 given properties
 
 Code: function earthuser {
 properties go here:
@@ -77,7 +77,7 @@ properties go here:
 
 Expect: earthuser.earthage.toequal(1);
 
-**TEST PASSED 11:30 AM**
+** 5 TESTS PASSED**
 
 ---
 
@@ -91,33 +91,15 @@ Expect: mercuryAge.toEqual(0.24)
 
 ---
 
-Describe: Returns venusage. venusage equal to (1 earth year) \* 0.62)
+Describe: Refactor mercury age so one function returns planetary age pushed to an array for each of the four planets.
 
-Test:
+Test: expect(testperson.planetaryConverter()).toEqual([0.24,.62,1.88,11.86]);
 
-Code:
+Code: earthuserconstructor.planetaryConverter()
 
-Expect:
+Expect: ([0.24,.62,1.88,11.86]
 
----
-
-Describe: Returns marsage. marsage equal to ((1 earth year) \* 1.88 ))
-
-Test:
-
-Code:
-
-Expect:
-
----
-
-Describe: Returns jupiterage. jupiterage equal to ((1 earth year) \* 11.86 ))
-
-Test:
-
-Code:
-
-Expect:
+**Test Passed**
 
 ---
 
@@ -131,13 +113,13 @@ Expect:
 
 ---
 
-Describe: Returns years lived past life expectancy, if users age > life expectancy
+Describe: Sets life expectancy property based on sex
 on planet.
 
-Test:
+Test: sex('male') will equal 70 years for males, and 72 for females
 
-Code:
+Code: getLifeExpectancy()
 
-Expect:
+Expect: maleperson.lifeExpectancy.toEqual(70)
 
 ---
