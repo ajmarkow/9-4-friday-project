@@ -132,3 +132,4 @@ Describe: will print results using a template literal
 Test: Returns values in object inserted in sentence.
 Code: printResults()
 Expect: Your age on earth is (object age). Your age on Mercury, Venus, Mars and Jupiter are (planet age array). Your life expectancy is (object life expectancy). Your gender is (object gender)
+**TEST PASSED**
