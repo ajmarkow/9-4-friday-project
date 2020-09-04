@@ -39,6 +39,17 @@ export default class Calculator {
   }
 
   printResults() {
-    return `Your age on earth is ${this.earthAge}.  Your age on Mercury, Venus,Mars and Jupiter respectively are ${this.planetaryAges}.  Your life expectancy is ${this.lifeExpectancy}.  Your gender is ${this.sex}.`;
+    return `Your age on earth is ${this.earthAge}.  Your age on Mercury, Venus,Mars and Jupiter respectively are ${this.planetaryAges}.  Your life expectancy on earth is ${this.lifeExpectancy}.  Your gender is ${this.sex}.`;
+  }
+
+  populatePlanetaryLifeExpectancy() {
+    let temporaryArray = [];
+    temporaryArray.push(
+      (parseFloat(this.lifeExpectancy) / 0.24).toFixed(2),
+      (parseFloat(this.lifeExpectancy) / 0.62).toFixed(2),
+      (parseFloat(this.lifeExpectancy) / 1.88).toFixed(2),
+      (parseFloat(this.lifeExpectancy) / 11.86).toFixed(2)
+    );
+    return temporaryArray;
   }
 }
