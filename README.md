@@ -83,11 +83,11 @@ Expect: earthuser.earthage.toequal(1);
 
 Describe: Returns mercuryage. Mercuryage equal to (1 earth year) \* 0.24)
 
-Test:
+Test: An earthage = 1 will be converted to .24 years old
 
-Code:
+Code: mercuryAge(user.earthage = 1)
 
-Expect:
+Expect: mercuryAge.toEqual(0.24)
 
 ---
 

@@ -4,4 +4,9 @@ export default class Calculator {
     this.sex = sex;
     this.planetaryages = [];
   }
+
+  function mercuryAge() {
+    let ageReturned = (earthage * 0.24)
+    return ageReturned
+  }
 }
