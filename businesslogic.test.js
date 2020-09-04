@@ -30,20 +30,23 @@ describe("person", () => {
 
   test("user object life expectancy array stores list of life expectancies. ", () => {
     const testperson = new earthuser();
-    testperson.sex='male'
-    testperson.lifeExpectancy = 70
-    expect(testperson.planetarylifeExpectancy.toEqual([291.66,112.90,37.23,5.90]);
+    testperson.sex = "female";
+    testperson.lifeExpectancy = testperson.getLifeExpectancy();
+    expect(testperson.lifeExpectancy).toEqual([]);
   });
 
   test("user object stores lifeExpectancy property. ", () => {
     const testperson = new earthuser();
     testperson.lifeExpectancy = 70;
 
+    expect(testperson.lifeExpectancy).toEqual(70);
+  });
 
   test("planetaryAge function returns earthAge  divided by planetary coefficient for Mercury, Venus, Mars, and Jupiter ", () => {
     const testperson = new earthuser();
     testperson.earthAge = 2;
-    expect(testperson.planetaryConvert()).toEqual([8.33, 3.22, 1.06, 0.16]);
+    testperson.planetaryages = testperson.planetaryConvert();
+    expect(testperson.planetaryages).toEqual([0.48, 1.24, 3.76, 23.72]);
   });
 
   test("Test if life expectancy is set based upon gender for males.", () => {
