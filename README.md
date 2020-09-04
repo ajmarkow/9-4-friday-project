@@ -63,7 +63,7 @@ Test: Node project compiles correctly.
 Code: package.json and webback.config files are configured correctly.
 Expect: Node project compiles sucessfully.
 
----
+## Test Passed 10:21 AM
 
 Describe: Returns mercuryage. Mercuryage equal to (1 earth year) \* 0.24)
 
