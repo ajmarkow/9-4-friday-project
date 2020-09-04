@@ -3,7 +3,7 @@ export default class Calculator {
     this.earthAge = 0;
     this.sex = String;
     this.planets = [];
-    this.planetaryages = [];
+    this.planetaryAges = [];
     this.planetaryLifeExpectancy = [];
     this.lifeExpectancy = 0;
   }
@@ -36,5 +36,9 @@ export default class Calculator {
       this.lifeExpectancy = 71;
     }
     return lifeExpectancy;
+  }
+
+  printResults() {
+    return `Your age on earth is ${this.earthAge}.  Your age on Mercury, Venus,Mars and Jupiter respectively are ${this.planetaryAges}.  Your life expectancy is ${this.lifeExpectancy}.  Your gender is ${this.sex}.`;
   }
 }
