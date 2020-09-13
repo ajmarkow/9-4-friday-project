@@ -1,5 +1,5 @@
-export default class Calculator {
-  earthuser() {
+export default class earthuser {
+  constructor() {
     this.earthAge = 0;
     this.sex = String;
     this.planets = [];
@@ -12,7 +12,6 @@ export default class Calculator {
     let ageArray = [];
     let mercuryAgeReturned = (parseFloat(this.earthAge) / 0.24).toFixed(2);
     ageArray.push(mercuryAgeReturned);
-    console.log(mercuryAgeReturned);
     let venusAgeReturned = (parseFloat(this.earthAge) / 0.62).toFixed(2);
     ageArray.push(venusAgeReturned);
     let marsAgeReturned = (parseFloat(this.earthAge) / 1.88).toFixed(2);
