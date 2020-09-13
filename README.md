@@ -103,7 +103,7 @@ Expect: ([0.24,.62,1.88,11.86]
 
 Describe: Returns life expectancy on selected planet. Subtracts years lived from life expectancy, expressed in age on selected planet, to get years remaining.
 
-Test:
+Test: subtracting life expectancy left from life expectancy defined returns correct remainder.
 
 Code:
 
