@@ -1,7 +1,5 @@
 # Galactic Solar System Age Calculator
 
----
-
 _Solar System Age Calculator, September 4, 2020_
 
 By **_AJ Markow_**
