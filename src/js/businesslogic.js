@@ -41,7 +41,6 @@ export default class earthuser {
   getRemain() {
     this.remainingLifeExpectancy = this.planetaryAges;
     const c = this.planetaryLifeExpectancy;
-    console.log(c);
     this.remainingLifeExpectancy.map((element) => (element - c).toFixed(2));
     return this.remainingLifeExpectancy;
   }
