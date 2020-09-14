@@ -105,11 +105,12 @@ Describe: Returns life expectancy on selected planet. Subtracts years lived from
 
 Test: subtracting life expectancy left from life expectancy defined returns correct remainder.
 
-Code:
+Code: getRemain()
 
-Expect:
+Expect: to Subtract life expectancy from planetary ages. So if a female is 72, and array has been populated this should return 0 for all remaining life expectancy values in array.
+testuser.getRemain().toEqual(['0','0','0','0'])
 
-Code needs to be written, test already has been.
+Test Passed
 
 ---
 
