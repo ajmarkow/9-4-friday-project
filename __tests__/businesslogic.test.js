@@ -99,10 +99,10 @@ describe("person", () => {
   test("Get remaining life expectancy.", () => {
     const testperson = new earthuser();
     testperson.sex = "female";
-    testperson.earthuser = 70;
+    testperson.earthuser = 72;
     testperson.lifeExpectancy = testperson.getLifeExpectancy();
     testperson.planetaryAges = testperson.planetaryConvert();
     testperson.planetaryLifeExpectancy = testperson.populatePlanetaryLifeExpectancy();
-    expect(testperson.getRemain()).toEqual([8.33, 3.23, 1.06, 0.17]);
+    expect(testperson.getRemain()).toEqual(["0.00", "0.00", "0.00", "0.00"]);
   });
 });

@@ -6,6 +6,7 @@ export default class earthuser {
     this.planetaryAges = [];
     this.planetaryLifeExpectancy = [];
     this.lifeExpectancy = 0;
+    this.remainingLifeExpectancy = [];
   }
 
   planetaryConvert() {
@@ -35,6 +36,14 @@ export default class earthuser {
       this.lifeExpectancy = 71;
     }
     return lifeExpectancy;
+  }
+
+  getRemain() {
+    this.remainingLifeExpectancy = this.planetaryAges;
+    const c = this.planetaryLifeExpectancy;
+    console.log(c);
+    this.remainingLifeExpectancy.map((element) => (element - c).toFixed(2));
+    return this.remainingLifeExpectancy;
   }
 
   printResults() {
