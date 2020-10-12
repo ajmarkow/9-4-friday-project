@@ -10,6 +10,7 @@ _Takes users age input, returns their age on 4 other planets in our solar system
 
 ## Setup/Installation Requirements
 
+[![Run on Repl.it](https://repl.it/badge/github/ajmarkow/9-4-friday-project)](https://repl.it/github/ajmarkow/9-4-friday-project)
 1. Clone git repository to device with node.js installed.
 2. Run npm install in project directory.
 3. Run npm start to launch project. Index.html will open in your web browser using webpack's development server.
